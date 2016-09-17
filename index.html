@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <title>Null Pointer Solutions</title>
+    	<meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+		
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+        
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/font-awesome.css">
+        <link rel="stylesheet" href="css/animate.css">
+        <link rel="stylesheet" href="css/nullpointer_misc.css">
+        <link rel="stylesheet" href="css/nullpointer_style.css">
+
+        <script src="js/vendor/modernizr-2.6.1-respond-1.1.0.min.js"></script>
+    </head>
+    <body>
+
+
+        <div class="site-main" id="sTop">
+            <div class="site-header">
+                <div class="main-header">
+                    <div class="container">
+                        <div id="menu-wrapper">
+                            <div class="row">
+                                <div class="logo-wrapper col-md-5 col-sm-5">
+                                    <h1>
+                                        <a>Null Pointer Solutions</a>
+                                    </h1>
+                                </div> <!-- /.logo-wrapper -->
+                                <div class="col-md-7 col-sm-7 main-menu text-right">
+                                    <div class="toggle-menu visible-sm visible-xs"><i class="fa fa-bars"></i></div>
+                                    <ul class="menu-first">
+                                        <li class="active"><a href="#">Home</a></li>
+                                        <li><a href="#services">Servicios</a></li>
+                                        <li><a href="#portfolio">Portafolio</a></li>
+                                        <li><a href="#our-team">Equipo</a></li>
+                                        <li><a href="#contact">Contacto</a></li>                                 
+                                    </ul>                                    
+                                </div> <!-- /.main-menu -->
+                            </div> <!-- /.row -->
+                        </div> <!-- /#menu-wrapper -->                        
+                    </div> <!-- /.container -->
+                </div> <!-- /.main-header -->
+            </div> <!-- /.site-header -->
+            <div class="site-slider">
+                <div class="slider">
+                    <div class="flexslider">
+                        <ul class="slides">
+                            <li>
+                                <div class="overlay"></div>
+                                <img src="images/slide1.jpg" alt="">
+                                <div class="slider-caption visible-md visible-lg">
+                                    <h2>Desarrollo Android</h2>
+                                    <p>Desarrollo de aplicaciones móviles para Android</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="overlay"></div>
+                                <img src="images/slide2.jpg" alt="">
+                                <div class="slider-caption visible-md visible-lg">
+                                    <h2>Responsive HTML CSS PHP</h2>
+                                    <p>Páginas webs adaptables a los distintos dispositivos.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="overlay"></div>
+                                <img src="images/slide3.jpg" alt="">
+                                <div class="slider-caption visible-md visible-lg">
+                                    <h2>Asesoramiento al cliente</h2>
+                                    <p>Ayudamos al cliente a concretar sus ideas</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div> <!-- /.flexslider -->
+                </div> <!-- /.slider -->
+            </div> <!-- /.site-slider -->
+        </div> <!-- /.site-main -->
+
+
+        <div class="content-section" id="services">
+            <div class="container">
+                <div class="row">
+                    <div class="heading-section col-md-12 text-center">
+                        <h2>Nuestros Servicios</h2>
+                        <p>Diseño Web y Programación en Android</p>
+                    </div> <!-- /.heading-section -->
+                </div> <!-- /.row -->
+                <div class="row">
+                    <div class="col-md-3 col-sm-6">
+                        <div class="service-item" id="service-1">
+                            <div class="service-icon">
+                                <i class="fa fa-file-code-o"></i>
+                            </div> <!-- /.service-icon -->
+                            <div class="service-content">
+                                <div class="inner-service">
+                                   <h3>Diseño Web</h3>
+                                   <p>Realizamos páginas webs responsivas y adaptables a todo tipo de dispositivos móviles para que tu emprendimiento llegue a cualquier parte del mundo en cualquier pantalla.</p> 
+                                </div>
+                            </div> <!-- /.service-content -->
+                        </div> <!-- /#service-1 -->
+                    </div> <!-- /.col-md-3 -->
+                    <div class="col-md-3 col-sm-6">
+                        <div class="service-item" id="service-2">
+                            <div class="service-icon">
+                                <i class="fa fa-cog"></i>
+                            </div> <!-- /.service-icon -->
+                            <div class="service-content">
+                                <div class="inner-service">
+                                   <h3>Soporte</h3>
+                                   <p>Mantenimiento gratuito de para mayor confort y seguridad del cliente.</p> 
+                                </div>
+                            </div> <!-- /.service-content -->
+                        </div> <!-- /#service-1 -->
+                    </div> <!-- /.col-md-3 -->
+                    <div class="col-md-3 col-sm-6">
+                        <div class="service-item" id="service-3">
+                            <div class="service-icon">
+                                <i class="fa fa-pencil"></i>
+                            </div> <!-- /.service-icon -->
+                            <div class="service-content">
+                                <div class="inner-service">
+                                   <h3>Diseño Gráfico</h3>
+                                   <p>Diseñamos tu sitio, logotipo, y otros en Photoshop previamente a comenzar a programarlo para que la web que buscás se adapte a tu estilo.</p> 
+                                </div>
+                            </div> <!-- /.service-content -->
+                        </div> <!-- /#service-1 -->
+                    </div> <!-- /.col-md-3 -->
+                    <div class="col-md-3 col-sm-6">
+                        <div class="service-item" id="service-4">
+                            <div class="service-icon">
+                                <i class="fa fa-mobile"></i>
+                            </div> <!-- /.service-icon -->
+                            <div class="service-content">
+                                <div class="inner-service">
+                                   <h3>Apps</h3>
+                                   <p>Desarrollamos aplicaciones móviles para plataformas Android completamente a medida.</p> 
+                                </div>
+                            </div> <!-- /.service-content -->
+                        </div> <!-- /#service-1 -->
+                    </div> <!-- /.col-md-3 -->
+                </div> <!-- /.row -->
+            </div> <!-- /.container -->
+        </div> <!-- /#services -->
+
+
+
+        <div class="content-section" id="portfolio">
+            <div class="container">
+                <div class="row">
+                    <div class="heading-section col-md-12 text-center">
+                        <h2>Portafolio</h2>
+                        <p>Increíbles trabajos para nuestros clientes</p>
+                    </div> <!-- /.heading-section -->
+                </div> <!-- /.row -->
+                <div class="row">
+                    <div class="portfolio-item col-md-3 col-sm-6">
+                        <div class="portfolio-thumb">
+                            <img src="images/gallery/p1.jpg" alt="">
+                            <div class="portfolio-overlay">
+                                <h3>Armonía Opus Trío</h3>
+                                <p>Página responsiva para el grupo de música de cámara <br>"Armonía Opus Trío"</p>
+                                <a href="http://armoniaopustrio.com.ar"class="expand">
+                                    <i class="fa fa-search"></i>
+                                </a>
+                            </div> <!-- /.portfolio-overlay -->
+                        </div> <!-- /.portfolio-thumb -->
+                    </div> <!-- /.portfolio-item -->
+                    <div class="portfolio-item col-md-3 col-sm-6">
+                        <div class="portfolio-thumb">
+                            <img src="images/gallery/p2.jpg" alt="">
+                            <div class="portfolio-overlay">
+                                <h3>Boat</h3>
+                                <p>Asperiores commodi illo fuga perferendis dolore repellendus sapiente ipsum.</p>
+                                <a href="images/gallery/p2.jpg" data-rel="lightbox" class="expand">
+                                    <i class="fa fa-search"></i>
+                                </a>
+                            </div> <!-- /.portfolio-overlay -->
+                        </div> <!-- /.portfolio-thumb -->
+                    </div> <!-- /.portfolio-item -->
+                    <div class="portfolio-item col-md-3 col-sm-6">
+                        <div class="portfolio-thumb">
+                            <img src="images/gallery/p7.jpg" alt="">
+                            <div class="portfolio-overlay">
+                                <h3>Urban</h3>
+                                <p>Asperiores commodi illo fuga perferendis dolore repellendus sapiente ipsum.</p>
+                                <a href="images/gallery/p7.jpg" data-rel="lightbox" class="expand">
+                                    <i class="fa fa-search"></i>
+                                </a>
+                            </div> <!-- /.portfolio-overlay -->
+                        </div> <!-- /.portfolio-thumb -->
+                    </div> <!-- /.portfolio-item -->
+                    <div class="portfolio-item col-md-3 col-sm-6">
+                        <div class="portfolio-thumb">
+                            <img src="images/gallery/p8.jpg" alt="">
+                            <div class="portfolio-overlay">
+                                <h3>Cycling</h3>
+                                <p>Asperiores commodi illo fuga perferendis dolore repellendus sapiente ipsum.</p>
+                                <a href="images/gallery/p8.jpg" data-rel="lightbox" class="expand">
+                                    <i class="fa fa-search"></i>
+                                </a>
+                            </div> <!-- /.portfolio-overlay -->
+                        </div> <!-- /.portfolio-thumb -->
+                    </div> <!-- /.portfolio-item -->
+                    <div class="portfolio-item col-md-3 col-sm-6">
+                        <div class="portfolio-thumb">
+                            <img src="images/gallery/p3.jpg" alt="">
+                            <div class="portfolio-overlay">
+                                <h3>Digital Era</h3>
+                                <p>Asperiores commodi illo fuga perferendis dolore repellendus sapiente ipsum.</p>
+                                <a href="images/gallery/p3.jpg" data-rel="lightbox" class="expand">
+                                    <i class="fa fa-search"></i>
+                                </a>
+                            </div> <!-- /.portfolio-overlay -->
+                        </div> <!-- /.portfolio-thumb -->
+                    </div> <!-- /.portfolio-item -->
+                    <div class="portfolio-item col-md-3 col-sm-6">
+                        <div class="portfolio-thumb">
+                            <img src="images/gallery/p4.jpg" alt="">
+                            <div class="portfolio-overlay">
+                                <h3>Horizon</h3>
+                                <p>Asperiores commodi illo fuga perferendis dolore repellendus sapiente ipsum.</p>
+                                <a href="images/gallery/p4.jpg" data-rel="lightbox" class="expand">
+                                    <i class="fa fa-search"></i>
+                                </a>
+                            </div> <!-- /.portfolio-overlay -->
+                        </div> <!-- /.portfolio-thumb -->
+                    </div> <!-- /.portfolio-item -->
+                    <div class="portfolio-item col-md-3 col-sm-6">
+                        <div class="portfolio-thumb">
+                            <img src="images/gallery/p5.jpg" alt="">
+                            <div class="portfolio-overlay">
+                                <h3>Aquatic City</h3>
+                                <p>Asperiores commodi illo fuga perferendis dolore repellendus sapiente ipsum.</p>
+                                <a href="images/gallery/p5.jpg" data-rel="lightbox" class="expand">
+                                    <i class="fa fa-search"></i>
+                                </a>
+                            </div> <!-- /.portfolio-overlay -->
+                        </div> <!-- /.portfolio-thumb -->
+                    </div> <!-- /.portfolio-item -->
+                    <div class="portfolio-item col-md-3 col-sm-6">
+                        <div class="portfolio-thumb">
+                            <img src="images/gallery/p6.jpg" alt="">
+                            <div class="portfolio-overlay">
+                                <h3>New Path</h3>
+                                <p>Asperiores commodi illo fuga perferendis dolore repellendus sapiente ipsum.</p>
+                                <a href="images/gallery/p6.jpg" data-rel="lightbox" class="expand">
+                                    <i class="fa fa-search"></i>
+                                </a>
+                            </div> <!-- /.portfolio-overlay -->
+                        </div> <!-- /.portfolio-thumb -->
+                    </div> <!-- /.portfolio-item -->
+                </div> <!-- /.row -->
+            </div> <!-- /.container -->
+        </div> <!-- /#portfolio -->
+
+
+
+
+        <div class="content-section" id="our-team">
+            <div class="container">
+                <div class="row">
+                    <div class="heading-section col-md-12 text-center">
+                        <h2>Equipo</h2>
+                        <p>El mejor equipo de programadores y diseñadores</p>
+                    </div> <!-- /.heading-section -->
+                </div> <!-- /.row -->
+                <div class="row">
+                    <div class="team-member col-md-3 col-sm-6">
+                        <div class="member-thumb">
+                            <img src="images/member3.jpg" alt="">
+                            <div class="team-overlay">
+                                <h3>Martín</h3>
+                                <span>Fundador</span>
+                                <ul class="social">
+                                    <li><a href="#" class="fa fa-facebook"></a></li>
+                                    <li><a href="#" class="fa fa-twitter"></a></li>
+                                    <li><a href="#" class="fa fa-linkedin"></a></li>
+                                </ul>
+                            </div> <!-- /.team-overlay -->
+                        </div> <!-- /.member-thumb -->
+                    </div> <!-- /.team-member -->
+                    <div class="team-member col-md-3 col-sm-6">
+                        <div class="member-thumb">
+                            <img src="images/member4.jpg" alt="">
+                            <div class="team-overlay">
+                                <h3>Matías</h3>
+                                <span>Co-Fundador</span>
+                                <ul class="social">
+                                    <li><a href="#" class="fa fa-facebook"></a></li>
+                                    <li><a href="#" class="fa fa-twitter"></a></li>
+                                    <li><a href="#" class="fa fa-linkedin"></a></li>
+                                </ul>
+                            </div> <!-- /.team-overlay -->
+                        </div> <!-- /.member-thumb -->
+                    </div> <!-- /.team-member -->
+                </div> <!-- /.row -->
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <div class="skills-heading">
+                            <h3 class="skills-title">Habilidades</h3>
+                            <p class="small-text">Nuestros profesionales se destacan en diferentes ámbitos</p>
+                        </div>
+                    </div> <!-- /.col-md-12 -->
+                </div> <!-- /.row -->
+                <div class="row">
+                    <div class="col-md-12 col-sm-6">
+                        <p style="font-size: 15px;">Somos un equipo con amplios conocimientos en múltiples áreas. El buen clima laboral hace efectivo los proyectos que realizamos día a día logrando alcanzar las metas propuestas internamente y con el cliente en cuestión.<br><br>
+						
+						Nuestro equipo se caracteriza por el desarrollo web aplicando diversos lenguajes de programación como HTML5, CSS3, Jquery, entre otros, para que el cliente quede satisfecho por el trabajo realizado. Por otro lado, nuestros proyectos con java para la plataforma android son totalmente a medida, ajustandonos a las necesidades del cliente ya que esta app pondrá en juego el buen visto de la empresa.<!-- spacing for mobile viewing --><br><br>
+					
+						</p>
+                    </div> <!-- /.col-md-8 -->
+                </div> <!-- /.row -->
+            </div> <!-- /.container -->
+        </div> <!-- /#our-team -->
+
+        <div class="content-section" id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="heading-section col-md-12 text-center">
+                        <h2>Contacto</h2>
+                        <p>Comuníquese con nosotros</p>
+                    </div> <!-- /.heading-section -->
+                </div> <!-- /.row -->
+              
+                <div class="row">
+                    <div class="col-md-5 col-sm-6">
+                        <div class="contact-form">
+                            <form method="post" name="contactform" id="contactform">
+                                <p>
+                                    <input name="nombre" type="text" id="nombre" placeholder="Nombre">
+                                </p>
+                                <p>
+                                    <input name="email" type="text" id="email" placeholder="Email"> 
+                                </p>
+                                <p>
+                                    <input name="asunto" type="text" id="asunto" placeholder="Asunto"> 
+                                </p>
+                                <p>
+                                    <textarea name="mensaje" id="comments" id="mensaje" placeholder="Mensaje"></textarea>    
+                                </p>
+                                <input type="submit" name="submit" class="mainBtn" id="submit" value="Enviar">
+                            </form>
+							
+							<script>
+							$(function() {
+								$("#contactform .submit").click(function() {
+									var nombre = $("#nombre").val();
+									var email = $("#email").val();
+									var asunto = $("#asunto").val();
+									var mensaje = $("#mensaje").val();
+									var dataString = 'nombre='+ nombre + '&email=' + email + '&asunto=' + asunto + 'mensaje='+ mensaje;
+
+									$.ajax({
+										type: "POST",
+										url: "email.php",
+										data: dataString,
+										success: function(){
+										$('.success').fadeIn(1000);
+										}
+									});
+
+									return false;
+								});
+							});
+							</script>
+							
+                        </div> <!-- /.contact-form -->
+                    </div> <!-- /.col-md-5 -->
+                </div> <!-- /.row -->
+            </div> <!-- /.container -->
+        </div> <!-- /#contact -->
+            
+        <div id="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-xs-12 text-left">
+                        <span>Copyright &copy; 2016 Null Pointer Solutions</span>
+                  </div> <!-- /.text-center -->
+                    <div class="col-md-4 hidden-xs text-right">
+                        <a href="#top" id="go-top">Inicio</a>
+                    </div> <!-- /.text-center -->
+                </div> <!-- /.row -->
+            </div> <!-- /.container -->
+        </div> <!-- /#footer -->
+        
+        <script src="js/vendor/jquery-1.11.0.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')</script>
+        <script src="js/bootstrap.js"></script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+
+    </body>
+</html>
