@@ -8,6 +8,7 @@
 
 		
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+		<link href="https://fonts.googleapis.com/css?family=Cabin|Montserrat" rel="stylesheet">
         
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/font-awesome.css">
@@ -16,6 +17,8 @@
         <link rel="stylesheet" href="css/nullpointer_style.css">
 
         <script src="js/vendor/modernizr-2.6.1-respond-1.1.0.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		
     </head>
     <body>
 
@@ -308,7 +311,7 @@
                 </div> <!-- /.row -->
                 <div class="row">
                     <div class="col-md-12 col-sm-6">
-                        <p style="font-size: 15px;">Somos un equipo con amplios conocimientos en múltiples áreas. El buen clima laboral hace efectivo los proyectos que realizamos día a día logrando alcanzar las metas propuestas internamente y con el cliente en cuestión.<br><br>
+                        <p style="font-size: 16px;">Somos un equipo con amplios conocimientos en múltiples áreas. El buen clima laboral hace efectivo los proyectos que realizamos día a día logrando alcanzar las metas propuestas internamente y con el cliente en cuestión.<br><br>
 						
 						Nuestro equipo se caracteriza por el desarrollo web aplicando diversos lenguajes de programación como HTML5, CSS3, Jquery, entre otros, para que el cliente quede satisfecho por el trabajo realizado. Por otro lado, nuestros proyectos con java para la plataforma android son totalmente a medida, ajustandonos a las necesidades del cliente ya que esta app pondrá en juego el buen visto de la empresa.<!-- spacing for mobile viewing --><br><br>
 					
@@ -326,16 +329,18 @@
                         <p>Comuníquese con nosotros</p>
                     </div> <!-- /.heading-section -->
                 </div> <!-- /.row -->
-              
+              <center>
                 <div class="row">
-                    <div class="col-md-5 col-sm-6">
-                        <div class="contact-form">
-                            <form method="post" name="contactform" id="contactform">
+				
+                    <div style="margin-left:28%" class="col-md-5 col-sm-6">
+                        
+						<div class="contact-form">
+							<form method="post" name="contactform" id="contactform" action="void(0)">
                                 <p>
                                     <input name="nombre" type="text" id="nombre" placeholder="Nombre">
                                 </p>
                                 <p>
-                                    <input name="email" type="text" id="email" placeholder="Email"> 
+                                    <input name="email" type="email" id="email" placeholder="Email"> 
                                 </p>
                                 <p>
                                     <input name="asunto" type="text" id="asunto" placeholder="Asunto"> 
@@ -343,35 +348,36 @@
                                 <p>
                                     <textarea name="mensaje" id="comments" id="mensaje" placeholder="Mensaje"></textarea>    
                                 </p>
-                                <input type="submit" name="submit" class="mainBtn" id="submit" value="Enviar">
+                                <input type="button" name="submit" class="mainBtn" id="submit" value="Enviar" onclick="EnviarContacto();">
                             </form>
 							
-							<script>
-							$(function() {
-								$("#contactform .submit").click(function() {
+							<script>							
+								function EnviarContacto(){
 									var nombre = $("#nombre").val();
 									var email = $("#email").val();
 									var asunto = $("#asunto").val();
 									var mensaje = $("#mensaje").val();
-									var dataString = 'nombre='+ nombre + '&email=' + email + '&asunto=' + asunto + 'mensaje='+ mensaje;
-
+									//var dataString = '&nombre='+ nombre + '&email=' + email + '&asunto=' + asunto + '&mensaje='+ mensaje;
+									var dataString = $("#contactform").serialize();
+									
 									$.ajax({
 										type: "POST",
 										url: "email.php",
 										data: dataString,
-										success: function(){
-										$('.success').fadeIn(1000);
+										success: function(datos){
+											alert(datos);
+											$('.success').fadeIn(1000);
 										}
 									});
 
 									return false;
-								});
-							});
+									
+								};							
 							</script>
 							
                         </div> <!-- /.contact-form -->
                     </div> <!-- /.col-md-5 -->
-                </div> <!-- /.row -->
+                </div> <!-- /.row --
             </div> <!-- /.container -->
         </div> <!-- /#contact -->
             

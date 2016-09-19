@@ -147,7 +147,7 @@ textarea {
 }
 
 body {
-  font-family: "Open Sans", Arial, sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: .83em;
   line-height: 1.75;
   color: #666666;
@@ -159,6 +159,7 @@ body {
 a {
   color: #189BFA;
   text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
   -webkit-transition: all 200ms ease-in-out;
   -moz-transition: all 200ms ease-in-out;
   transition: all 200ms ease-in-out;
@@ -168,8 +169,7 @@ a:hover {
   text-decoration: none;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Open Sans", Arial, sans-serif;
+h1, h2, h3, h4, h5, h6 {font-family: 'Montserrat', sans-serif;
   color: #444444;
 }
 
@@ -286,6 +286,7 @@ hr {
     text-transform: uppercase;
     color: #189BFA;
     font-size: 20px;
+	font-family: 'Montserrat', sans-serif;
     font-weight: 700;
 }
 
