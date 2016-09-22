@@ -233,7 +233,7 @@
                     </div> <!-- /.col-md-12 -->
                 </div> <!-- /.row -->
                 <div class="row">
-                    <div class="col-md-12 col-sm-6">
+                    <div class="col-md-12 col-sm-12">
                         <p style="font-size: 16px;">Somos un equipo con amplios conocimientos en múltiples áreas. El buen clima laboral hace efectivo los proyectos que realizamos día a día logrando alcanzar las metas propuestas internamente y con el cliente en cuestión.<br><br>
 						
 						Nuestro equipo se caracteriza por el desarrollo web aplicando diversos lenguajes de programación como HTML5, CSS3, Jquery, entre otros, para que el cliente quede satisfecho por el trabajo realizado. Por otro lado, nuestros proyectos con java para la plataforma android son totalmente a medida, ajustandonos a las necesidades del cliente ya que esta app pondrá en juego el buen visto de la empresa.<!-- spacing for mobile viewing --><br><br>
@@ -244,34 +244,34 @@
             </div> <!-- /.container -->
         </div> <!-- /#our-team -->
 
-        <div class="content-section" id="contact">
+        <div class="contact-content" id="contact">
             <div class="container">
                 <div class="row">
                     <div class="heading-section col-md-12 text-center">
-                        <h2>Contacto</h2>
-                        <p>Comuníquese con nosotros</p>
+                        <h2 style="color: #EEE;">Contacto</h2>
+                        <p style="color: #EEE;">Comuníquese con nosotros</p>
                     </div> <!-- /.heading-section -->
                 </div> <!-- /.row -->
               <center>
                 <div class="row">
 				
-                    <div style="margin-left:29%" class="col-md-5 col-sm-6">
+                    <div class="col-md-10 col-sm-10">
                         
 						<div class="contact-form">
 							<form method="post" name="contactform" id="contactform">
                                 <p>
-                                    <input name="nombre" type="text" id="nombre" placeholder="Nombre">
+                                    <input name="nombre" class="form-control" type="text" id="nombre" placeholder="Nombre">
                                 </p>
                                 <p>
-                                    <input name="email" type="email" id="email" placeholder="Email"> 
+                                    <input name="email" class="form-control" type="email" id="email" placeholder="Email"> 
                                 </p>
                                 <p>
-                                    <input name="asunto" type="text" id="asunto" placeholder="Asunto"> 
+                                    <input name="asunto" class="form-control" type="text" id="asunto" placeholder="Asunto"> 
                                 </p>
                                 <p>
-                                    <textarea name="mensaje" id="comments" id="mensaje" placeholder="Mensaje"></textarea>    
+                                    <textarea name="mensaje" class="form-control" id="comments" id="mensaje" placeholder="Mensaje"></textarea>    
                                 </p>
-                                <input type="submit" name="submit" class="mainBtn" id="submit" value="Enviar" onclick="EnviarContacto();">
+                                <input type="submit" class="form-control" name="submit" class="mainBtn" id="submit" value="Enviar" onclick="EnviarContacto();">
                             </form>							
 							
 							<script>	
@@ -307,28 +307,42 @@
 							
                         </div> <!-- /.contact-form -->
                     </div> <!-- /.col-md-5 -->
-                </div> <!-- /.row --
-            </div> <!-- /.container -->
-        </div> <!-- /#contact -->
-            
-        <div id="footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-8 col-xs-12 text-left">
-                        <span>Copyright &copy; 2016 Null Pointer Solutions</span>
-                  </div> <!-- /.text-center -->
-                    <div class="col-md-4 hidden-xs text-right">
-                        <a href="#top" id="go-top">Inicio</a>
-                    </div> <!-- /.text-center -->
                 </div> <!-- /.row -->
             </div> <!-- /.container -->
-        </div> <!-- /#footer -->
+        </div> <!-- /#contact -->
+           
+		
+		<a href="#top" class="go-top"><i class="fa fa-chevron-up fa-1x"></i></a>
         
         <script src="js/vendor/jquery-1.11.0.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')</script>
         <script src="js/bootstrap.js"></script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
+		
+		<script>
+		$(document).ready(function() {
+			// FlexSlider 
+		  	$('.flexslider').flexslider({
+		      animation: "fade",
+		      directionNav: false
+		  	});
+
+			// Show or hide the sticky footer button
+			$(window).scroll(function() {
+				if ($(this).scrollTop() > 200) {
+					$('.go-top').fadeIn(200);
+				} else {
+					$('.go-top').fadeOut(200);
+				}
+			});		
+			// Animate the scroll to top
+			$('.go-top').click(function(event) {
+				event.preventDefault();
+				$('html, body').animate({scrollTop: 0}, 300);
+			})
+		});
+	</script>
 
     </body>
 </html>
